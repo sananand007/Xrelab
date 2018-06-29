@@ -86,19 +86,39 @@ def get_pixel_range(key, ranges):
             return indx
     return -1
 
+def get_random_feature(x_train, x_test, nBins):
+    train_intensity_feature = []
+    test_intensity_feature = []
+    for i in range(len(x_train)):
+        img = x_train[i]
+        flat_img=[item for sublist in img for item in sublist]
+        hi=[round(np.random.uniform(0,1),3) for i in range(nBins)]
+        train_intensity_feature.append(hi)
+    for j in range(len(x_test)):
+        img = x_test[j]
+        flat_img=[item for sublist in img for item in sublist]
+        hj=[round(np.random.uniform(0,1),3) for i in range(nBins)] #random case
+        test_intensity_feature.append(hj)
+    return train_intensity_feature, test_intensity_feature
+
 def get_intensity_feature(x_train,x_test, nBins):
     train_intensity_feature = []
     test_intensity_feature = []
     list_of_ranges_train=[0]*nBins
     list_of_ranges_test=[0]*nBins
     #print(x_train)
-    jump=nBins
     ranges, main=[], 255
-    count=0
-    while main>0:
-        ranges.append((count, count+jump))
-        count+=jump
-        main-=nBins
+    if nBins==16:
+        count=0
+        jump=nBins
+        while main>0:
+            ranges.append((count, count+jump))
+            count+=jump
+            main-=nBins
+    if nBins in [64,128]:
+        jump=int(256/nBins)
+        for x in range(0,256,jump):ranges.append((x, x+jump-1))
+    #print("ranges","\n", ranges)
     for i in range(len(x_train)):
         img = x_train[i]
         flat_img=[item for sublist in img for item in sublist]
@@ -130,12 +150,52 @@ def get_intensity_feature(x_train,x_test, nBins):
 # x_test: testing images
 # F: [49,49, 48] filters
 # dimention of histogram is 48
+'''
+Total of 48 Filters, each filter of size 49x49
+We would need to do convolution map of each Filter over each image, for all the 48 filters that we have, and calculate the mean of the absolute of the map values
+no resizing of the image required before convolution
+'''
+
+def convolve2D(image, filter_):
+    '''
+    input args:
+        image: a numpy array of size [image height, image width]
+        filter_: a numpy array of filter size [filter hieght, filter width] [49, 49]
+    output args:
+        convolved output
+    '''
+    output=np.zeros(image.shape)
+    filter_ = np.flipud(np.fliplr(filter_))    # Flip the kernel
+    shift=len(filter_[0])-1
+    # Adding zero padding for the input image
+    image_padded = np.zeros((image.shape[0]+shift, image.shape[1]+shift))
+    image_padded[int(shift/2):-int(shift/2), int(shift/2):-int(shift/2)] =image
+
+    #Looping over every pixel
+    for col in range(image.shape[1]):
+        for row in range(image.shape[0]):
+            output[col][row]=(np.sum(np.multiply(image_padded[col:col+len(filter_[0]), row:row+len(filter_[0])], filter_)))
+    return output
 
 def get_filter_feature(x_train,x_test, F):
     train_filter_feature = []
     test_filter_feature = []
+    convolved_imgs=[]
+    abs_mean=np.zeros(48)
     for i in range(len(x_train)):
         img = x_train[i]
+        #convolved_imgs = [convolve2D(img, F[:,:,idx]) for idx in range(48)] # [64, 64, 48]
+        abs_mean = [np.mean(np.abs(convolve2D(img, F[:,:,idx]))) for idx in range(48)] # [1*48]
+        train_filter_feature.append(abs_mean)
+        abs_mean=np.zeros(48)
+    for i in range(len(x_test)):
+        img = x_test[i]
+        #convolved_imgs = [convolve2D(img, F[:,:,idx]) for idx in range(48)]
+        abs_mean = [np.mean(np.abs(convolve2D(img, F[:,:,idx]))) for idx in range(48)]
+        test_filter_feature.append(abs_mean)
+        abs_mean=np.zeros(48)
+    #print(np.mean(np.abs(convolved_imgs[0])))
+    #implot=plt.imshow(convolved_imgs[0])
 	###############PLACEHOLDER START########################
 	#Extracting the average absolute responses of each filter in the LM Bank
 	# hi=np.random.rand(48,1)
