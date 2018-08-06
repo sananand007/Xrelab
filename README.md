@@ -5,6 +5,51 @@ My Work on Computer Vision and Deep Learning at Xrelab Sandiego
   + Using KNN
   + Using SVM
 
++ Module-4:
+  + Installing dlib package for python 3.x - https://anaconda.org/menpo/dlib
+  + Using Conda Forge - *Sometimes things do not work with plain conda so we use Conda-Forge*
+    ```
+    conda install -c conda-forge dlib 
+    Installing dlib from the conda-forge channel can be achieved by adding conda-forge to your channels with:
+
+    conda config --add channels conda-forge
+    Once the conda-forge channel has been enabled, dlib can be installed with:
+
+    conda install dlib
+    It is possible to list all of the versions of dlib available on your platform with:
+
+    conda search dlib --channel conda-forge
+    ```
+
+```
+To write/save
+%%writefile myfile.py
+
+write/save cell contents into myfile.py (use -a to append). Another alias: %%file myfile.py
+To run
+%run myfile.py
+
+run myfile.py and output results in the current cell
+To load/import
+%load myfile.py
+
+load "import" myfile.py into the current cell
+For more magic and help
+%lsmagic
+
+list all the other cool cell magic commands.
+%COMMAND-NAME?
+
+for help on how to use a certain command. i.e. %run?
+Note
+Beside the cell magic commands, IPython notebook (now Jupyter notebook) is so cool that it allows you to use any unix command right from the cell (this is also equivalent to using the %%bash cell magic command).
+
+To run a unix command from the cell, just precede your command with ! mark. for example:
+
+!python --version see your python version
+!python myfile.py run myfile.py and output results in the current cell, just like %run (see the difference between !python and %run in the comments below).
+```
+
 ```Python
 X=tf.placeholder(tf.float32, [None, 10304]) #gray scale so 1 value for pixel
 W=tf.Variable(tf.zeros([10304, 40]))
