@@ -1,0 +1,66 @@
+Namespace(dataset='pascal_voc', demo_net='res101')
+C:\Public\xrelab\Week7_detection1 --- res101_faster_rcnn_iter_110000.ckpt
+checking the model here C:/Public/xrelab/Week7_detection1/data/voc_2007_trainval_voc_2012_trainval/res101_faster_rcnn_iter_110000.ckpt                                                                             
+2018-08-22 08:13:53.614343: W c:\l\tensorflow_1501918863922\work\tensorflow-1.2.1\tensorflow\core\platform\cpu_feature_guard.cc:45] 
+The TensorFlow library wasn't compiled to use SSE instructions, but these are available on your machine and could speed up CPU computations.
+2018-08-22 08:13:53.621871: W c:\l\tensorflow_1501918863922\work\tensorflow-1.2.1\tensorflow\core\platform\cpu_feature_guard.cc:45] 
+The TensorFlow library wasn't compiled to use SSE2 instructions, but these are available on your machine and could speed up CPU computations.
+2018-08-22 08:13:53.629534: W c:\l\tensorflow_1501918863922\work\tensorflow-1.2.1\tensorflow\core\platform\cpu_feature_guard.cc:45] 
+The TensorFlow library wasn't compiled to use SSE3 instructions, but these are available on your machine and could speed up CPU computations.                                                                                                                                                     
+2018-08-22 08:13:53.638389: W c:\l\tensorflow_1501918863922\work\tensorflow-1.2.1\tensorflow\core\platform\cpu_feature_guard.cc:45] 
+The TensorFlow library wasn't compiled to use SSE4.1 instructions, but these are available on your machine and could speed up CPU computations.                                                                                                                                                   
+2018-08-22 08:13:53.646138: W c:\l\tensorflow_1501918863922\work\tensorflow-1.2.1\tensorflow\core\platform\cpu_feature_guard.cc:45] 
+The TensorFlow library wasn't compiled to use SSE4.2 instructions, but these are available on your machine and could speed up CPU computations.                                                                                                                                                   
+2018-08-22 08:13:53.654647: W c:\l\tensorflow_1501918863922\work\tensorflow-1.2.1\tensorflow\core\platform\cpu_feature_guard.cc:45] 
+The TensorFlow library wasn't compiled to use AVX instructions, but these are available on your machine and could speed up CPU computations.
+2018-08-22 08:13:53.661710: W c:\l\tensorflow_1501918863922\work\tensorflow-1.2.1\tensorflow\core\platform\cpu_feature_guard.cc:45] 
+The TensorFlow library wasn't compiled to use AVX2 instructions, but these are available on your machine and could speed up CPU computations.                                                                                                                                                     
+2018-08-22 08:13:53.670145: W c:\l\tensorflow_1501918863922\work\tensorflow-1.2.1\tensorflow\core\platform\cpu_feature_guard.cc:45] 
+The TensorFlow library wasn't compiled to use FMA instructions, but these are available on your machine and could speed up CPU computations.
+<nets.resnet_v1.resnetv1 object at 0x0000018D930F4400>
+C:/Public/xrelab/Week7_detection1/data/voc_2007_trainval_voc_2012_trainval/res101_faster_rcnn_iter_110000.ckpt                                                                                                     
+Model restrored !!!                                                                                                                                                                                                
+Loaded network C:/Public/xrelab/Week7_detection1/data/voc_2007_trainval_voc_2012_trainval/res101_faster_rcnn_iter_110000.ckpt
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~                                                                                                                                                                                
+Demo for data/demo/000001.jpg                                                                                                                                                                                      
+Entering into the Demo function                                                                                                                                                                                    
+Detection took 26.309s for 300 object proposals                                                                                                                                                                    
+QWindowsWindow::setGeometry: Unable to set geometry 1200x1269+9+38 on QWidgetWindow/'MainWindowClassWindow'. 
+Resulting geometry:  1200x1045+9+38 (frame: 9, 38, 9, 9, custom margin: 0, 0, 0, 0, minimum size: 72x69, maximum size: 16777215x16777215).                                                                                                                                                                               
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~                                                                                                                                                                                
+Demo for data/demo/000456.jpg                                                                                                                                                                                      
+Entering into the Demo function
+Detection took 24.316s for 300 object proposals                                                                                                                                                                    
+QWindowsWindow::setGeometry: Unable to set geometry 1200x1269+9+38 on QWidgetWindow/'MainWindowClassWindow'. 
+Resulting geometry:  1200x1045+9+38 (frame: 9, 38, 9, 9, custom margin: 0, 0, 0, 0, minimum size: 72x69, maximum size: 16777215x16777215).                                                                                                                                                                               
+QWindowsWindow::setGeometry: Unable to set geometry 1200x1269+9+38 on QWidgetWindow/'MainWindowClassWindow'. 
+Resulting geometry:  1200x1045+9+38 (frame: 9, 38, 9, 9, custom margin: 0, 0, 0, 0, minimum size: 72x69, maximum size: 16777215x16777215).                                                                                                                                                                               
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+Demo for data/demo/000542.jpg                                                                                                                                                                                      
+Entering into the Demo function                                                                                                                                                                                    
+Detection took 22.767s for 300 object proposals
+QWindowsWindow::setGeometry: Unable to set geometry 1200x1269+9+38 on QWidgetWindow/'MainWindowClassWindow'. 
+Resulting geometry:  1200x1045+9+38 (frame: 9, 38, 9, 9, custom margin: 0, 0, 0, 0, minimum size: 72x69, maximum size: 16777215x16777215).                                                                                                                                                                               
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~                                                                                                                                                                                
+Demo for data/demo/001150.jpg                                                                                                                                                                                      
+Entering into the Demo function                                                                                                                                                                                    
+Detection took 23.155s for 300 object proposals                                                                                                                                                                    
+QWindowsWindow::setGeometry: Unable to set geometry 1200x1269+9+38 on QWidgetWindow/'MainWindowClassWindow'. 
+Resulting geometry:  1200x1045+9+38 (frame: 9, 38, 9, 9, custom margin: 0, 0, 0, 0, minimum size: 72x69, maximum size: 16777215x16777215).                                                                                                                                                                               
+QWindowsWindow::setGeometry: Unable to set geometry 1200x1269+9+38 on QWidgetWindow/'MainWindowClassWindow'. 
+Resulting geometry:  1200x1045+9+38 (frame: 9, 38, 9, 9, custom margin: 0, 0, 0, 0, minimum size: 72x69, maximum size: 16777215x16777215).                                                                                                                                                                               
+QWindowsWindow::setGeometry: Unable to set geometry 1200x1269+9+38 on QWidgetWindow/'MainWindowClassWindow'. 
+Resulting geometry:  1200x1045+9+38 (frame: 9, 38, 9, 9, custom margin: 0, 0, 0, 0, minimum size: 72x69, maximum size: 16777215x16777215).                                                                                                                                                                               
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~                                                                                                                                                                                
+Demo for data/demo/001763.jpg                                                                                                                                                                                      
+Entering into the Demo function                                                                                                                                                                                    
+Detection took 23.281s for 300 object proposals                                                                                                                                                                    
+QWindowsWindow::setGeometry: Unable to set geometry 1200x1269+9+38 on QWidgetWindow/'MainWindowClassWindow'. 
+Resulting geometry:  1200x1045+9+38 (frame: 9, 38, 9, 9, custom margin: 0, 0, 0, 0, minimum size: 72x69, maximum size: 16777215x16777215).                                                                                                                                                                               
+QWindowsWindow::setGeometry: Unable to set geometry 1200x1269+9+38 on QWidgetWindow/'MainWindowClassWindow'. 
+Resulting geometry:  1200x1045+9+38 (frame: 9, 38, 9, 9, custom margin: 0, 0, 0, 0, minimum size: 72x69, maximum size: 16777215x16777215).                                                                                                                                                                               ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+Demo for data/demo/004545.jpg                                                                                                                                                                                      Entering into the Demo function                                                                                                                                                                                    Detection took 22.859s for 300 object proposals
+QWindowsWindow::setGeometry: Unable to set geometry 1200x1269+9+38 on QWidgetWindow/'MainWindowClassWindow'. 
+Resulting geometry:  1200x1045+9+38 (frame: 9, 38, 9, 9, custom margin: 0, 0, 0, 0, minimum size: 72x69, maximum size: 16777215x16777215).                                                                                                                                                                               QWindowsWindow::setGeometry: Unable to set geometry 1200x1269+9+38 on QWidgetWindow/'MainWindowClassWindow'. Resulting geometry:  1200x1045+9+38 (frame: 9, 38, 9, 9, custom margin: 0, 0, 0, 0, minimum size: 72x69, maximum size: 16777215x16777215).                                                                                                                                                                               QWindowsWindow::setGeometry: Unable to set geometry 1200x1269+9+38 on QWidgetWindow/'MainWindowClassWindow'. Resulting geometry:  1200x1045+9+38 (frame: 9, 38, 9, 9, custom margin: 0, 0, 0, 0, minimum size: 72x69, maximum size: 16777215x16777215).
+QWindowsWindow::setGeometry: Unable to set geometry 1200x1269+9+38 on QWidgetWindow/'MainWindowClassWindow'. 
+Resulting geometry:  1200x1045+9+38 (frame: 9, 38, 9, 9, custom margin: 0, 0, 0, 0, minimum size: 72x69, maximum size: 16777215x16777215).
