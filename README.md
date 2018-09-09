@@ -180,14 +180,13 @@ totalMemory: 11.00GiB freeMemory: 9.10GiB
 2018-08-17 11:38:18.343642: I T:\src\github\tensorflow\tensorflow\core\common_runtime\gpu\gpu_device.cc:942] 0:   N
 2018-08-17 11:38:18.343932: I T:\src\github\tensorflow\tensorflow\core\common_runtime\gpu\gpu_device.cc:1053] Created TensorFlow device (/job:localhost/replica:0/task:0/device:GPU:0 with 8806 MB memory) -> physical GPU (device: 0, name: GeForce GTX 1080 Ti, pci bus id: 0000:02:00.0, compute capability: 6.1)
 Loaded network ../data/voc_2007_trainval+voc_2012_trainval\res101_faster_rcnn_iter_110000.ckpt
-~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 Demo for data/demo/wei-09.jpg
 Detection took 2.537s for 300 object proposals
 
 Process finished with exit code 0
 -----------
-'''
 
 ## Human Pose Detection
   + All changes are present on estimator.py
-  + TF human pose estimation - https://github.com/sananand007/tf-pose-estimation --> To understand the Source code  
+  + TF human pose estimation - https://github.com/sananand007/tf-pose-estimation --> To understand the Source code
+  + ![alt text](https://github.com/sananand007/Xrelab/blob/master/hw6/Running_Human_Pose_Est.JPG)  
