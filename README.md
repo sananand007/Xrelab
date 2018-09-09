@@ -139,7 +139,7 @@ for i in range(1000+1): training_Step(i,True, True)
   + https://arxiv.org/abs/1611.08050
   + Github: https://github.com/ZheC/Realtime_Multi-Person_Pose_Estimation
   + CMU OpenPose: https://github.com/CMU-Perceptual-Computing-Lab/openpose
-  + (tensorflowpy36) C:\Public\xrelab\Week7_detection1>c:\Public\xrelab\Week7_detection1\myfrcnn\demo.py 
+  + (tensorflowpy36) C:\Public\xrelab\Week7_detection1>c:\Public\xrelab\Week7_detection1\myfrcnn\demo.py
 
 '''
 Below are a list of my changes, you can take the list as a reference, but I am sure you will need something different to make it work on your own windows machine because each environment is different.
@@ -187,3 +187,7 @@ Detection took 2.537s for 300 object proposals
 Process finished with exit code 0
 -----------
 '''
+
+## Human Pose Detection
+  + All changes are present on estimator.py
+  + TF human pose estimation - https://github.com/sananand007/tf-pose-estimation --> To understand the Source code  
