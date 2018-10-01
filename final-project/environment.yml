@@ -1,0 +1,19 @@
+name: tensorflow1p11
+dependencies:
+  - python=3.6
+  - tensorflow=1.11
+  - numpy=1.15
+  - skimage
+  - scikit-learn
+  - scipy
+  - pandas
+  - bokeh
+  - seaborn
+  - matplotlib
+  - keras
+  - nltk
+  - ggplot2
+  - pytorch
+  - gensim
+  - spacy
+  - scrapy
