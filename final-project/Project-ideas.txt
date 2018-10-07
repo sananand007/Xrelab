@@ -1,0 +1,41 @@
+Project Ideas can be checked out at these locations : 
+
+- http://cs231n.github.io/poster-session-2018/
+- https://cse.buffalo.edu/~jsyuan/papers/2018/
+- https://cs.stanford.edu/people/ssrinath/ , https://dancasas.github.io/ - Monocular Hand Post estimation
+- https://www.drorayalon.com/skeletron/ - 3D pose detection
+- http://6.869.csail.mit.edu/fa18/project.html [MIT]
+
+Basics: 
+- http://cs231n.stanford.edu/project.html
+- https://github.com/cs231n/cs231n.github.io
+
+
+
+- Image Classification using Deep Gradient Boosted CNN, Classification problem of Unlabelled Test images .
+	Dataset Used : Kaggle
+	DeepSat (SAT-6) Airborne Dataset
+	405,000 image patches each of size 28x28 and covering 6 landcover classes
+
+Boost CNN - https://github.com/mmoghimi/BoostCNN
+Group NormalizationYuxin Wu and Kaiming HeEuropean Conference on Computer Vision (ECCV), 2018 (Oral). Best Paper Honorable MentionarXiv   code/models   slides
+	- Validate Group Normalization using same Dataset
+ Quality is important [2 months]
+
+
+
+
+
+
+- Image Synthesis using GANs 
+	AttnGAN: Fine-Grained Text to Image Generation with Attentional Generative Adversarial Network, Generate Image from text then use GAN to make it realistic
+- Hand Pose estimation - https://github.com/xinghaochen/awesome-hand-pose-estimation --> Very tough but big research based
+	Data Sets - ICLV - https://labicvl.github.io/hand.html
+	Topics of Interest - http://icvl.ee.ic.ac.uk/hands17/
+	http://handtracker.mpi-inf.mpg.de/projects/GANeratedHands/
+	This is fairly A difficult problem in the time provided, But this is a very good usable idea and I would like to do this for a long term project
+	- https://arxiv.org/pdf/1712.01057.pdf - [GANerated Hands for Real-Time 3D Hand Tracking from Monocular RGB]
+	- Vnect 
+- Image Compression using Deep Learning/CNN
+- Fine grained Classification of a particular kind
+	
