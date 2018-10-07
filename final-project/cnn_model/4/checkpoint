@@ -1,0 +1,3 @@
+model_checkpoint_path: "C:/Public/xrelab/Xrelab/final-project/cnn_model/4\\model.ckpt-200"
+all_model_checkpoint_paths: "C:/Public/xrelab/Xrelab/final-project/cnn_model/4\\model.ckpt-1"
+all_model_checkpoint_paths: "C:/Public/xrelab/Xrelab/final-project/cnn_model/4\\model.ckpt-200"
